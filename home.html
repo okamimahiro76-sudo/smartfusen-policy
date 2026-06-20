@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スマートフセンくん｜ブラウザ常駐の付箋型コピペ管理ツール</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
+    color: #212529;
+    line-height: 1.8;
+    background: #fffdf5;
+  }
+  header {
+    background: linear-gradient(135deg, #fff9db 0%, #fff3bf 50%, #ffe066 100%);
+    padding: 60px 20px 70px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 16px;
+  }
+  header p {
+    font-size: 18px;
+    color: #495057;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .badge {
+    display:inline-block;
+    background:#212529; color:#fff;
+    font-size:14px; font-weight:700;
+    padding:6px 16px; border-radius:30px;
+    margin-bottom: 20px;
+  }
+  main {
+    max-width: 720px;
+    margin: -40px auto 0;
+    padding: 0 20px 60px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    padding: 36px;
+    margin-bottom: 24px;
+  }
+  .card h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  ul.features {
+    list-style: none;
+  }
+  ul.features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f3f5;
+    font-size: 16px;
+  }
+  ul.features li:last-child { border-bottom: none; }
+  .plans {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .plan {
+    flex: 1;
+    min-width: 220px;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .plan.pro {
+    border-color: #ffd43b;
+    background: #fff9db;
+  }
+  .plan h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .plan ul {
+    list-style: none;
+    font-size: 14px;
+    color: #495057;
+  }
+  .plan ul li {
+    padding: 4px 0;
+  }
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #868e96;
+    font-size: 13px;
+  }
+  footer a {
+    color: #495057;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge">📌 Chrome拡張機能</span>
+  <h1>スマートフセンくん</h1>
+  <p>ブラウザのサイドバーに常駐する付箋型ツール。よく使う文言をワンクリックでコピー&ペーストして、毎日の定型文・テンプレート作業をもっとスマートに。</p>
+</header>
+
+<main>
+  <div class="card">
+    <h2>✨ 主な機能</h2>
+    <ul class="features">
+      <li>📋 ワンクリックでコピー&ペースト</li>
+      <li>🏷️ タグによる分類・絞り込み</li>
+      <li>🔍 キーワード検索で瞬時に発見</li>
+      <li>🎨 4色のカラー付箋で視覚的に整理</li>
+      <li>📊 よく使う付箋は自動で上位表示</li>
+      <li>📑 テキストファイルからの一括インポート</li>
+      <li>📤 JSON形式でのバックアップ・復元</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>💎 料金プラン</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>無料版</h3>
+        <ul>
+          <li>付箋の作成（枚数制限あり）</li>
+          <li>黄色の付箋のみ</li>
+          <li>タグは2種類まで</li>
+          <li>検索・コピー機能</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <h3>👑 有料版</h3>
+        <ul>
+          <li>付箋を無制限に作成</li>
+          <li>すべてのカラーを使用可能</li>
+          <li>タグを自由に追加</li>
+          <li>付箋の編集機能</li>
+          <li>一括削除・JSON/テキストの一括インポート・エクスポート</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📩 お問い合わせ</h2>
+    <p>ご質問・不具合報告などは下記メールアドレスまでご連絡ください。</p>
+    <p style="margin-top:8px;"><strong>tatanataro21@gmail.com</strong></p>
+  </div>
+</main>
+
+<footer>
+  <p>スマートフセンくん</p>
+  <p><a href="./">プライバシーポリシー</a></p>
+</footer>
+
+</body>
+</html>
